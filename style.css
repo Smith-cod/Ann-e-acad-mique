@@ -1,6 +1,5 @@
 /* 🌍 Styles de base pour tout le site */
 body {
-    position:relative;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@ body {
 }
 
 header {
-    position:absolute;
+    position:sticky;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,6 +162,7 @@ h3 a:hover {
         padding: 1.5rem;
     }
 }
+
 
 
 
