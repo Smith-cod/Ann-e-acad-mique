@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="L'année académique au Togo, retrouvez toutes les informations importantes pour les étudiants au Togo.">
+  <meta name="keywords" content="année académique, Togo, éducation, université, primaire, secondaire">
+  <meta name="author" content="L'année académique au Togo">
+  <link rel="icon" href="logo.png">
+  <title>L'année académique au Togo</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #d0f2f8;
+      margin: 40px;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      border: 1px solid #004080;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #e0e0e0;
+      padding: 20px;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .question {
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #004080;
+      transition: color 0.2s;
+    }
+
+    .question:hover {
+      color: #4581db;
+    }
+
+    .arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .arrow.open {
+      transform: rotate(180deg);
+    }
+
+    .answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      color: #333;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .answer.open {
+      max-height: 500px; /* Assez grand pour tout contenu */
+    }
+  </style>
+</head>
+<body>
+   <header>
+        <img src="logo.png" alt="Logo éducatif" class="logo">
+        <h1>L'année académique au Togo</h1>
+        <link rel="stylesheet" href="style.css">
+    </header>
+  <main>
+  <p>Bienvenue à la <b>Foire aux questions (FAQs)</b> de L'année académique au Togo. Nous espérons qu'elle vous aidera à trouver des réponses à vos questions.</p>
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <div class="question">
+        Quelle est la source des informations sur ce site ?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="answer">
+        Les informations proviennent des communications officielles du Ministère des enseignements primaire et secondaire, du Ministère de l'enseignement supérieur et de la recherche, ainsi que de l'Université de Lomé. Nous nous efforçons de les vérifier et de les mettre à jour régulièrement.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">
+        . Les dates mentionnées sont-elles définitives ?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="answer">
+        Les dates publiées sont celles communiquées officiellement. Cependant, elles peuvent être sujettes à des modifications de la part des autorités compétentes. Il est toujours recommandé de consulter les canaux officiels pour les confirmations de dernière minute.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">
+        Le site couvre-t-il toutes les écoles au Togo ?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="answer">
+       Ce site fournit des informations générales sur l'année académique. Les dates spécifiques et les événements propres à chaque établissement doivent être vérifiés directement auprès de l'école concernée.
+      </div>
+    </div>
+     <div class="faq-item">
+      <div class="question">
+        . Comment puis-je signaler une erreur ou faire une suggestion ?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="answer">
+       Vous pouvez utiliser le lien "Contactez-nous" disponible sur le site pour nous envoyer vos suggestions, corrections ou questions. Nous apprécions votre contribution pour maintenir l'exactitude des informations.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="question">
+        Puis-je utiliser ces informations sur mon propre site web ou publication ?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="answer">
+       Oui, vous pouvez utiliser ces informations pour un usage personnel et non commercial. Cependant, nous vous demandons de mentionner la source, idéalement en incluant un lien vers notre site.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const questions = document.querySelectorAll('.question');
+
+    questions.forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const arrow = question.querySelector('.arrow');
+
+        answer.classList.toggle('open');
+        arrow.classList.toggle('open');
+      });
+    });
+  </script>
+  </main>
+  <footer>
+        <div class="copyright">
+           <div class="Notes">
+            <a href="FAQ.html"><h5 id="faq">FAQs</h5></a>
+            <a href="legal.html"><h5 id="legal">Mentions légales</h5></a>
+            <a href="terms.html"><h5 id="terms">Termes et conditions d'utilisation</h5></a>
+            <a href="confidentialite.html"><h5 id="confidentiel">Politiques de confidentialité</h5></a>
+            <a href="about.html"><h5 id="about">A propos de nous</h5></a>
+            <a href="mailto:carteralexandre775@gmail.com"><h5 id="email">Contactez-nous</h5></a>
+
+           </div>
+        <div>
+            <h4>&#169 <i>L'année académique au Togo</i>. Tous droits réservés.</h4>
+        </div>
+    </footer>
+</body>
+</html>
