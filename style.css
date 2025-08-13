@@ -1,175 +1,208 @@
 /* 🌍 Styles de base pour tout le site */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #d0f2f8;
-    text-align: center;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d0f2f8;
+  text-align: center;
 }
 
 header {
-    position: sticky;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    background-color: #004080;
-    padding: 1rem;
-    color: white;
-    z-index: 1000;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  background-color: #004080;
+  padding: 1rem;
+  color: white;
 }
 
 .logo {
-    width: 60px;
-    height: auto;
-    border-radius: 30px;
+  width: 60px;
+  height: auto;
+  border-radius: 30px;
 }
 
 h1 {
-    font-size: 2rem;
-    margin: 0;
+  font-size: 2rem;
+  margin: 0;
 }
 
 main {
-    padding: 2rem;
+  padding: 2rem;
 }
-.prebac a:hover, .postbac a:hover{
-    padding: 1rem;
+p {
+  text-align: start;
 }
-.prebacannee, .postbacannee {
-    margin-bottom: 2rem;
+.prebac a:hover,
+.postbac a:hover {
+  padding: 1rem;
 }
-
-.prebacannee a, .postbacannee a {
-    font-size: 1.5rem;
-    color: #004080;
-    text-decoration: none;
-    font-weight: bold;
+.prebacannee,
+.postbacannee {
+  margin-bottom: 2rem;
 }
 
-.prebacannee a:hover, .postbacannee a:hover {
-    text-decoration:underline ;
+.prebacannee a,
+.postbacannee a {
+  font-size: 1.5rem;
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
 }
-.postbac p{
-    margin-top: 10rem;
+
+.prebacannee a:hover,
+.postbacannee a:hover {
+  text-decoration: underline;
+}
+.postbac p {
+  margin-top: 10rem;
 }
 
 /* 🌍 Styles pour les tableaux */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-th, td {
-    padding: 12px;
-    text-align: center;
-    border: 1px solid #ddd;
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
 }
 
 th {
-    background-color: #004080;
-    color: white;
+  background-color: #004080;
+  color: white;
 }
 
 td {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
 #trim {
-    background-color: #e0f7fa;
-    font-weight: bold;
-    text-align: center;
-    padding: 16px;
+  background-color: #e0f7fa;
+  font-weight: bold;
+  text-align: center;
+  padding: 16px;
 }
 
 /* 🌍 Liens dans le corps */
 a {
-    color: #004080;
-    text-decoration: none;
-    font-weight: bold;
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* 🌍 Footer */
 footer {
-    background-color: #004080;
-    color: white;
-    padding: 1rem;
-    position: relative;
+  background-color: #004080;
+  color: white;
+
+  position: relative;
 }
 
 footer h4 {
-    font-size: 1rem;
-    margin: 0;
+  font-size: 1rem;
+  margin: 0;
+}
+.Notes {
+  padding: 0;
+  display: grid;
+  color: rgb(233, 240, 240);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "fa te"
+    "le co"
+    "ab em";
+}
+.Notes a {
+  color: #d0f2f8;
+}
+#faq {
+  grid-area: fa;
+}
+#legal {
+  grid-area: le;
+}
+#terms {
+  grid-area: te;
+}
+#confidentiel {
+  grid-area: co;
+}
+#about {
+  grid-area: ab;
 }
 
 /* 🌍 Section spécifique pour les "dates importantes" */
 h3 {
-    font-size: 1.2rem;
-    color: #333;
+  font-size: 1.2rem;
+  color: #333;
 }
 
 h3 a {
-    color: #004080;
+  color: #004080;
 }
 
 h3 a:hover {
-    text-decoration: underline;
-    transition: 1s;
+  text-decoration: underline;
+  transition: 1s;
 }
 
 /* 🌍 Responsivité */
 @media screen and (max-width: 480px) and (orientation: portrait) {
-    h1 {
-        font-size: 1.5rem;
-    }
+  h1 {
+    font-size: 1.5rem;
+  }
 
-    .prebacannee p, .postbacannee p, .decoupagepstb2025 p, .decoupagepstb2025 h2 {
-        font-size: 1rem;
-    }
+  .prebacannee p,
+  .postbacannee p,
+  .decoupagepstb2025 p,
+  .decoupagepstb2025 h2 {
+    font-size: 1rem;
+  }
 
-    a {
-        font-size: 1rem;
-    }
+  a {
+    font-size: 1rem;
+  }
 
-    table {
-        font-size: 0.9rem;
-    }
+  table {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
-    h1 {
-        font-size: 1.7rem;
-    }
+  h1 {
+    font-size: 1.7rem;
+  }
 
-    .prebacannee p, .postbacannee p, .decoupagepstb2025 p, .decoupagepstb2025 h2 {
-        font-size: 1.1rem;
-    }
+  .prebacannee p,
+  .postbacannee p,
+  .decoupagepstb2025 p,
+  .decoupagepstb2025 h2 {
+    font-size: 1.1rem;
+  }
 
-    table {
-        font-size: 1rem;
-    }
+  table {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    main {
-        padding: 1.5rem;
-    }
+  main {
+    padding: 1.5rem;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
