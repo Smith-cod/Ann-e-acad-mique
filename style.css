@@ -16,6 +16,7 @@ header {
     background-color: #004080;
     padding: 1rem;
     color: white;
+    z-index:1000;
 }
 
 .logo {
@@ -161,6 +162,7 @@ h3 a:hover {
         padding: 1.5rem;
     }
 }
+
 
 
 
