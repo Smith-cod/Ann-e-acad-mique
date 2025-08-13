@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    position:fixed;
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@ header {
     background-color: #004080;
     padding: 1rem;
     color: white;
-    z-index:1000;
+    z-index: 1000;
 }
 
 .logo {
@@ -162,6 +162,7 @@ h3 a:hover {
         padding: 1.5rem;
     }
 }
+
 
 
 
