@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    
+    position:sticky;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,6 +161,7 @@ h3 a:hover {
         padding: 1.5rem;
     }
 }
+
 
 
 
