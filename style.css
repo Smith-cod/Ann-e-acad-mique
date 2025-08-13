@@ -109,7 +109,7 @@ a:hover {
 footer {
   background-color: #004080;
   color: white;
-
+  padding:1rem;
   position: relative;
 }
 
@@ -206,3 +206,4 @@ h3 a:hover {
     padding: 1.5rem;
   }
 }
+
