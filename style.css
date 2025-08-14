@@ -33,6 +33,7 @@ h1 {
 
 main {
   padding: 2rem;
+  min-height:100vh;
 }
 p {
   text-align: start;
@@ -209,6 +210,7 @@ h3 a:hover {
     padding: 1.5rem;
   }
 }
+
 
 
 
