@@ -122,14 +122,18 @@ footer h4 {
   display: grid;
   color: rgb(233, 240, 240);
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
+    "ho no"
     "fa te"
     "le co"
     "ab em";
 }
 .Notes a {
   color: #d0f2f8;
+}
+#home{
+  grid-area: ho;
 }
 #faq {
   grid-area: fa;
@@ -206,4 +210,5 @@ h3 a:hover {
     padding: 1.5rem;
   }
 }
+
 
