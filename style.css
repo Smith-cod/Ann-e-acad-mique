@@ -111,6 +111,7 @@ footer {
   color: white;
   padding:1rem;
   position: relative;
+  bottom: 0;
 }
 
 footer h4 {
@@ -210,5 +211,6 @@ h3 a:hover {
     padding: 1.5rem;
   }
 }
+
 
 
