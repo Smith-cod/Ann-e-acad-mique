@@ -35,6 +35,10 @@ main {
   padding: 1rem;
   min-height:100vh;
 }
+img{
+  height:675px;
+  width:1200px;
+}
 p {
   text-align: start;
 }
@@ -210,6 +214,7 @@ h3 a:hover {
     padding: 1.5rem;
   }
 }
+
 
 
 
