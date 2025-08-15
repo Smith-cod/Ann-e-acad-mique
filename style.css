@@ -36,8 +36,8 @@ main {
   min-height:100vh;
 }
 img{
-  height:675px;
-  width:1200px;
+  height:auto;
+  width:100%;
 }
 p {
   text-align: start;
@@ -214,6 +214,7 @@ h3 a:hover {
     padding: 1.5rem;
   }
 }
+
 
 
 
